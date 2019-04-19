@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            color: #00f;
+             background: rgba(0,0,0,.2); /* css3 才有 背景半透明 但是里面的内容不透明*/
+            /*alpha 半透明的意思  取值范围 0 ~ 1      0% ~  100% */
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            color: #00f;
+           opacity: 0.2;    /* 让盒子半透明 里面的内容也半透明了  取值范围 0 ~ 1 ie678 不认识 */
+           /* filter: alpha(opacity = 20);  ie 6. 7 .8 认识的 盒子半透明  opacity 取值范围 0 ~100 */
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"> 背景半透明的写法</div>
+
+<div class="box2"> 盒子半透明 </div>
+</body>
+</html>
